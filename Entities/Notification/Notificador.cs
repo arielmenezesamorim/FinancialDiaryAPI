@@ -20,6 +20,11 @@ namespace Entities.Notification
             this.notificacoes.Add(notificacao);
         }
 
+        public void LimparNotificacoes()
+        {
+            this.notificacoes.Clear();
+        }
+
         public List<Notificacao> ObterNotificacoes()
         {
             return this.notificacoes;
