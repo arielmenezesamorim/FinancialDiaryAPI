@@ -11,7 +11,6 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.IO;
 using WebApi.Configuration;
-using Entities.Security;
 
 namespace WebApi
 {

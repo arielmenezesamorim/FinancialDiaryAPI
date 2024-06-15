@@ -15,18 +15,13 @@ namespace Entities.Models.Cadastro
         [Required(ErrorMessage = "Sigla é obrigatória")]
         [StringLength(2, MinimumLength = 2, ErrorMessage = "Sigla da unidade federativa deve conter {2} caracters")]
         public string cadtbunfederativa_pksigla { set; get; }
-
         [Required(ErrorMessage = "Nome é obrigatória")]
         public string cadtbunfederativa_nome { set; get; }
         [Required(ErrorMessage = "Região é obrigatória")]
-
         public int cadtbunfederativa_regiao { set; get; }
-
         public int cadtbunfederativa_codibge { set; get; }
-
         [Dapper.Contrib.Extensions.Write(false)]
         public string urlprograma { set; get; }
-
         [Dapper.Contrib.Extensions.Write(false)]
         public string uf_mostrar
         {
