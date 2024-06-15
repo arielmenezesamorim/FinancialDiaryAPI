@@ -21,8 +21,12 @@ namespace WebApi.Configuration
             //Notificador
             services.AddScoped<INotificador, Notificador>();
 
+            //Cadastro
             services.AddScoped<PaisInterface, PaisRepository>();
             services.AddScoped<PaisIService, PaisService>();
+
+            services.AddScoped<UnidadeFederativaInterface, UnidadeFederativaRepository>();
+            services.AddScoped<UnidadeFederativaIService, UnidadeFederativaService>();
 
             return services;
         }

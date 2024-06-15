@@ -61,9 +61,20 @@ namespace Domain.Services.Cadastro
             this._notificador.Adicionar(new Notificacao(mensagem));
         }
 
+        protected void LimparNotificacoes()
+        {
+            this._notificador.LimparNotificacoes();
+        }
+
         protected List<Notificacao> Notificacoes()
         {
             return this._notificador.ObterNotificacoes();
+        }
+
+        protected void AdicionarNotificacoes(List<string> mensagens)
+        {
+            foreach (var mensagem in mensagens)
+                Notificar(mensagem);
         }
 
         private bool TestarPais(Pais pais, string operacao)
