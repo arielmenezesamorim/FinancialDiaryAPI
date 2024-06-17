@@ -28,6 +28,9 @@ namespace WebApi.Configuration
             services.AddScoped<UnidadeFederativaInterface, UnidadeFederativaRepository>();
             services.AddScoped<UnidadeFederativaIService, UnidadeFederativaService>();
 
+            services.AddScoped<CidadeInterface, CidadeRepository>();
+            services.AddScoped<CidadeIService, CidadeService>();
+
             return services;
         }
     }
