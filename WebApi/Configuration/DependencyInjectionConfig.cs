@@ -31,6 +31,9 @@ namespace WebApi.Configuration
             services.AddScoped<CidadeInterface, CidadeRepository>();
             services.AddScoped<CidadeIService, CidadeService>();
 
+            services.AddScoped<DepartamentoInterface, DepartamentoRepository>();
+            services.AddScoped<DepartamenteIService, DepartamentoService>();
+
             return services;
         }
     }
