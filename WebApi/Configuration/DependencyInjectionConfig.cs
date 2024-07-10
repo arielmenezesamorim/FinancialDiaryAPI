@@ -34,6 +34,9 @@ namespace WebApi.Configuration
             services.AddScoped<DepartamentoInterface, DepartamentoRepository>();
             services.AddScoped<DepartamenteIService, DepartamentoService>();
 
+            services.AddScoped<TipoDocumentoInterface, TipoDocumentoRepository>();
+            services.AddScoped<TipoDocumentoIService, TipoDocumentoService>();
+
             return services;
         }
     }
