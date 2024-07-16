@@ -13,15 +13,9 @@ namespace Entities.Models.Cadastro
     {
         [Dapper.Contrib.Extensions.Key]
         public int cadtbtipodocumento_pkseq { get; set; }
-
         public string cadtbtipodocumento_sigla { get; set; }
-
         [Required(ErrorMessage = "Descrição é obrigatória")]
         public string cadtbtipodocumento_descricao { get; set; }
-
-        [Dapper.Contrib.Extensions.Write(false)]
-        public string urlprograma { set; get; }
-
         [Dapper.Contrib.Extensions.Write(false)]
         public string tipodoc_mostrar
         {
