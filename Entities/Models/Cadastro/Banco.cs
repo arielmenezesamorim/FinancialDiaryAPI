@@ -12,7 +12,7 @@ namespace Entities.Models.Cadastro
     {
         [Dapper.Contrib.Extensions.Key]
         public int cadtbbanco_pkseq { set; get; }
-        public int? cadtbbanco_agencia { set; get; }
+        public int cadtbbanco_agencia { set; get; }
         public string cadtbbanco_digitoagencia { set; get; }
         [Required(ErrorMessage = "Descrição é obrigatória")]
         public string cadtbbanco_descricao { set; get; }
@@ -27,6 +27,9 @@ namespace Entities.Models.Cadastro
         public int cadtbbanco_banco { set; get; }
 
         [Dapper.Contrib.Extensions.Write(false)]
-        public Cidade fkcidade { set; get; }
+        public Cidade? fkcidade { set; get; }
+
+        [Dapper.Contrib.Extensions.Write(false)]
+        public string urlprograma { set; get; }
     }
 }
