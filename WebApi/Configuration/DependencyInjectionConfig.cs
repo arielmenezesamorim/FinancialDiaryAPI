@@ -40,6 +40,9 @@ namespace WebApi.Configuration
             services.AddScoped<BancoInterface, BancoRepository>();
             services.AddScoped<BancoIService, BancoService>();
 
+            services.AddScoped<FormaPagamentoInterface, FormaPagamentoRepository>();
+            services.AddScoped<FormaPagamentoIService, FormaPagamentoService>();
+
             return services;
         }
     }

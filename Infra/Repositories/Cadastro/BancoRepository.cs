@@ -19,7 +19,7 @@ namespace Infra.Repositories.Cadastro
     {
         private readonly ILogger _log;
 
-        public BancoRepository(IDbConnection connection, IConfiguration configuration, INotificador notificador, ILogger<PaisRepository> log) : base(connection, configuration, notificador, log)
+        public BancoRepository(IDbConnection connection, IConfiguration configuration, INotificador notificador, ILogger<BancoRepository> log) : base(connection, configuration, notificador, log)
         {
             this._log = log;
         }

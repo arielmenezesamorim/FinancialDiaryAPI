@@ -47,7 +47,7 @@ namespace WebApi.Controllers.Cadastro
         {
             if (ModelState.IsValid)
             {
-                _bancoInterface.Insert(banco);
+                _bancoIService.Insert(banco);
                 return CustomResponse(banco, "Banco cadastrado com sucesso", HttpStatusCode.Created);
             }
             return ValidarModelBinding();
@@ -58,7 +58,7 @@ namespace WebApi.Controllers.Cadastro
         {
             if (ModelState.IsValid)
             {
-                _bancoInterface.Update(banco);
+                _bancoIService.Update(banco);
                 return CustomResponse(banco, "Banco alterado com sucesso", HttpStatusCode.OK);
             }
             return ValidarModelBinding();
@@ -67,7 +67,7 @@ namespace WebApi.Controllers.Cadastro
         [HttpDelete]
         public ActionResult<Banco> Delete(Banco banco)
         {
-            _bancoInterface.Delete(banco);
+            _bancoIService.Delete(banco);
             return CustomResponse(banco, "Banco excluído com sucesso", HttpStatusCode.OK);
         }
     }
