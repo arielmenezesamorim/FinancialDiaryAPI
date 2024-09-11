@@ -21,7 +21,5 @@ namespace Entities.Models.Cadastro
         public int cadtbpais_continente { get; set; }
         public string cadtbpais_nacionalidade { get; set; } = null!;
         public int cadtbpais_codbacen { get; set; }
-        [Dapper.Contrib.Extensions.Write(false)]
-        public string urlprograma { set; get; }
     }
 }
