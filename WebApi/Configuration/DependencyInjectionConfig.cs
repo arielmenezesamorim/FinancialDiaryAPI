@@ -1,10 +1,14 @@
 ﻿using Domain.Interfaces.Cadastro;
 using Domain.Interfaces.Generics;
 using Domain.Interfaces.IServices.Cadastro;
+using Domain.Interfaces.IServices.Tesouraria;
+using Domain.Interfaces.Tesouraria;
 using Domain.Services.Cadastro;
+using Domain.Services.Tesouraria;
 using Entities.Notification;
 using Infra.Repositories.Cadastro;
 using Infra.Repositories.Generics;
+using Infra.Repositories.Tesouraria;
 using Microsoft.Extensions.DependencyInjection;
 using Npgsql;
 using System.Data;
@@ -42,6 +46,10 @@ namespace WebApi.Configuration
 
             services.AddScoped<FormaPagamentoInterface, FormaPagamentoRepository>();
             services.AddScoped<FormaPagamentoIService, FormaPagamentoService>();
+
+            //Tesouraria
+            services.AddScoped<ContaInterface, ContaRepository>();
+            services.AddScoped<ContaIService, ContaService>();
 
             return services;
         }
