@@ -16,6 +16,7 @@ namespace Entities.Models.Cadastro
         public string cadtbtipodocumento_sigla { get; set; }
         [Required(ErrorMessage = "Descrição é obrigatória")]
         public string cadtbtipodocumento_descricao { get; set; }
+
         [Dapper.Contrib.Extensions.Write(false)]
         public string tipodoc_mostrar
         {

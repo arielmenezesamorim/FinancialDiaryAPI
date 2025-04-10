@@ -23,8 +23,5 @@ namespace Entities.Models.Tesouraria
 
         [Dapper.Contrib.Extensions.Write(false)]
         public Banco? fkbanco { get; set; }
-
-        [Dapper.Contrib.Extensions.Write(false)]
-        public string urlprograma { set; get; }
     }
 }

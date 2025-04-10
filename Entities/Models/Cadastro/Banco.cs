@@ -28,8 +28,5 @@ namespace Entities.Models.Cadastro
 
         [Dapper.Contrib.Extensions.Write(false)]
         public Cidade? fkcidade { set; get; }
-
-        [Dapper.Contrib.Extensions.Write(false)]
-        public string urlprograma { set; get; }
     }
 }
