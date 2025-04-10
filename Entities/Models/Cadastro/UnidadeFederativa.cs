@@ -20,8 +20,7 @@ namespace Entities.Models.Cadastro
         [Required(ErrorMessage = "Região é obrigatória")]
         public int cadtbunfederativa_regiao { set; get; }
         public int cadtbunfederativa_codibge { set; get; }
-        [Dapper.Contrib.Extensions.Write(false)]
-        public string urlprograma { set; get; }
+
         [Dapper.Contrib.Extensions.Write(false)]
         public string uf_mostrar
         {

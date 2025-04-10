@@ -23,10 +23,10 @@ namespace Entities.Models.Cadastro
         [Dapper.Contrib.Extensions.Write(false)]
         public UnidadeFederativa fkuf { get; set; }
         [Dapper.Contrib.Extensions.Write(false)]
+
         public Pais fkpais { get; set; }
         [Dapper.Contrib.Extensions.Write(false)]
-        public string urlprograma { set; get; }
-        [Dapper.Contrib.Extensions.Write(false)]
+
         public string cidade_uf_mostrar
         {
             get

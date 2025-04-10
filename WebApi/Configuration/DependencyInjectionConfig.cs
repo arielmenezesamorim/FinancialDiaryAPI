@@ -51,6 +51,9 @@ namespace WebApi.Configuration
             services.AddScoped<ContaInterface, ContaRepository>();
             services.AddScoped<ContaIService, ContaService>();
 
+            services.AddScoped<TipoMovimentoInterface, TipoMovimentoRepository>();
+            services.AddScoped<TipoMovimentoIService, TipoMovimentoService>();
+
             return services;
         }
     }
