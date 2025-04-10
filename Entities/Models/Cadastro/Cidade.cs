@@ -26,7 +26,7 @@ namespace Entities.Models.Cadastro
 
         public Pais fkpais { get; set; }
         [Dapper.Contrib.Extensions.Write(false)]
-
+      
         public string cidade_uf_mostrar
         {
             get

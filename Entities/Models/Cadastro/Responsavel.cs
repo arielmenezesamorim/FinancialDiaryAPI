@@ -29,7 +29,6 @@ namespace Entities.Models.Cadastro
         public string cadtbresponsavel_bairro { get; set; }
         public int? cadtbresponsavel_fkseqcidade { get; set; }
         public string cadtbresponsavel_nroregprofissional { get; set; }
-
         [Dapper.Contrib.Extensions.Write(false)]
         public Cidade fkcidade { get; set; }
     }
