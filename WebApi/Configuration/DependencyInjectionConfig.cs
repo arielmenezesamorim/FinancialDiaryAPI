@@ -1,12 +1,16 @@
 ﻿using Domain.Interfaces.Cadastro;
+using Domain.Interfaces.Cliente;
 using Domain.Interfaces.Generics;
 using Domain.Interfaces.IServices.Cadastro;
+using Domain.Interfaces.IServices.Cliente;
 using Domain.Interfaces.IServices.Tesouraria;
 using Domain.Interfaces.Tesouraria;
 using Domain.Services.Cadastro;
+using Domain.Services.Cliente;
 using Domain.Services.Tesouraria;
 using Entities.Notification;
 using Infra.Repositories.Cadastro;
+using Infra.Repositories.Cliente;
 using Infra.Repositories.Generics;
 using Infra.Repositories.Tesouraria;
 using Microsoft.Extensions.DependencyInjection;
@@ -53,6 +57,10 @@ namespace WebApi.Configuration
 
             services.AddScoped<TipoMovimentoInterface, TipoMovimentoRepository>();
             services.AddScoped<TipoMovimentoIService, TipoMovimentoService>();
+
+            //Cliente
+            services.AddScoped<TipoClienteInterface, TipoClienteRepository>();
+            services.AddScoped<TipoClienteIService, TipoClienteService>();
 
             return services;
         }
